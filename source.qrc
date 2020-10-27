@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/new">
+        <file>open.jpg</file>
+        <file>doors.jpg</file>
+        <file>rock.png</file>
+        <file>coin.png</file>
+        <file>rat.jpg</file>
+        <file>vortex.png</file>
+    </qresource>
+</RCC>
