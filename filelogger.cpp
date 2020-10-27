@@ -10,7 +10,9 @@ FileLogger::FileLogger()
 
 FileLogger::FileLogger(std::string filename){
     output  = new std::fstream(filename);
- output->open(filename,std::ios::in | std::ios::app);
+ //output->open(filename,std::ios::in | std::ios::app);
+     if(!output)
+              std::cerr << "Error of writing logs of program\n";
     //output.open(filename, std::ios::out | std::ios::in | std::ios::app);
      type = 2;
 }
