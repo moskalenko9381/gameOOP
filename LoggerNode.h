@@ -10,6 +10,9 @@ class LoggerNode
 public:
     friend class LoggerHolder;
     LoggerNode(Logger* l = nullptr, LoggerNode* n = nullptr):log(l),next(n){}
+    ~LoggerNode() {
+        delete log;
+    }
 };
 
 #endif // LOGGERNODE_H
